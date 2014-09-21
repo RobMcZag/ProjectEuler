@@ -54,6 +54,9 @@ public class P009_Pythagorean_triplet {
 
 	}
 
+	/*
+	 * Check if it is a Pytagorean Triplet
+	 */
 	private static boolean isPytagoreanTriplet(int a, int b, int c) {
 		long aa_bb = a*a +b*b;
 		long cc = c*c;
