@@ -1,4 +1,4 @@
-package com.rz.projectEuler;
+package com.rzagni.projectEuler;
 
 import java.math.BigInteger;
 
