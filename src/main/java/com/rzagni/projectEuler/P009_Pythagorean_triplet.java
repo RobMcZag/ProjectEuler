@@ -29,7 +29,7 @@ public class P009_Pythagorean_triplet {
 	 *  Bmax < (1000 -a) / 2
 	 */
 	
-	private static int SPECIAL_SUM = 1000000; //148140; //1000;	//3+4+5;
+	private static int SPECIAL_SUM = 1000; //1000000; //148140; //1000;	//3+4+5;
 	
 	/**
 	 * @param args
@@ -57,7 +57,7 @@ public class P009_Pythagorean_triplet {
 	/*
 	 * Check if it is a Pytagorean Triplet
 	 */
-	private static boolean isPytagoreanTriplet(int a, int b, int c) {
+	protected static boolean isPytagoreanTriplet(int a, int b, int c) {
 		long aa_bb = a*a +b*b;
 		long cc = c*c;
 		return (aa_bb == cc);
