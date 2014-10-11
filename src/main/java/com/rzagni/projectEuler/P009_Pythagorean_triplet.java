@@ -35,7 +35,7 @@ public class P009_Pythagorean_triplet {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int aMax1 = SPECIAL_SUM / 3;
+		//int aMax1 = SPECIAL_SUM / 3;		/* First level approximation */
 		int aMax2 = (int) (SPECIAL_SUM / ( 2 + Math.sqrt(2.0)));
 		
 		for (int a = 1; a <= aMax2; a++) {
@@ -43,10 +43,8 @@ public class P009_Pythagorean_triplet {
 			for (int b = a+1; b <= bMax; b++) {
 				int c = SPECIAL_SUM -a -b;
 				if (isPytagoreanTriplet(a, b, c)) {
-					//long abc = a*b*c;
 					BigInteger abc = BigInteger.valueOf(a).multiply(BigInteger.valueOf(b).multiply(BigInteger.valueOf(c)));
 					System.out.format("Pytagorean triplet: %,9d, %,9d, %,9d | a*b*c = %,25d%n", a, b, c, abc);
-					//System.exit(0);
 				}
 			}
 			
