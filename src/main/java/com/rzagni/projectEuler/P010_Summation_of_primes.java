@@ -81,54 +81,39 @@ public class P010_Summation_of_primes {
 		if (limit >= 2) {
 			sum += 2;
 		}
-		for (long i = 3; i <= limit; i+=2) {
-			if (isPrimeSiege(i, isPrime)){
+		for (int i = 3; i <= limit; i+=2) {
+			if (isPrime[i]){
 				sum += i;
 			}
 		}
 		return sum;
 	}
 	
-	protected static boolean isPrimeSiege(long number, boolean[] isPrime) {
-
-		if ( (number == 0) || (number == 1)) {
-			return false;
-		}
-		
-		if (isEven(number)) {
-			return (number == 2) ? true : false;
-		}
-		
-		int numSqrt = (int) Math.sqrt(number);
-		
-		for (int i = 3; i <= numSqrt; i+=2) {
-			if ( (isPrime[i]) & ((number % i) == 0) ) {
-				return false;
-			}
-		}
-		return true;
-	}
-
 	/**
-	 * @param maxPrimeToCheck
-	 * @return
+	 * Builds an array with true in the positions of prime numbers and false elsewhere.
+	 * @param maxPrimeToCheck the maximum prime number to check
+	 * @return the array telling if a number is prime or not
 	 */
 	protected static boolean[] buildArrayOfPrimes(int maxPrimeToCheck) {
 		
-		boolean[] isPrime = new boolean[maxPrimeToCheck+1];
+		boolean[] isPrime = new boolean[maxPrimeToCheck+1]; // go from [0] to [maxPrimeToCheck]
+		if (maxPrimeToCheck < 2) {
+			return isPrime;
+		}
+		
 		Arrays.fill(isPrime, true);
 		
 		ruleOutZeroAndOne(isPrime);
-		ruleOutEven(isPrime);
+		
+		ruleOutEvenOverTwo(isPrime);
 		
 		for (int i = 3; i < isPrime.length; i+=2) {
 			if (isPrime[i] == true) {
-				ruleOutMultiples(i, isPrime);
+				ruleOutMultiplesOfPrime(i, isPrime);
 			}
 		}		
 		return isPrime;
 	}
-
 
 	/**
 	 * Marks positions 0 and 1 of the array as not primes.
@@ -142,7 +127,7 @@ public class P010_Summation_of_primes {
 	 * Rules out from the prime array all the even numbers higher than 2.
 	 * @param isPrime the array of primes
 	 */
-	protected static void ruleOutEven(boolean[] isPrime) {
+	protected static void ruleOutEvenOverTwo(boolean[] isPrime) {
 		int upperLimit = isPrime.length;
 		for (int i = 4; i < upperLimit; i+=2) {
 			isPrime[i] = false;
@@ -151,21 +136,36 @@ public class P010_Summation_of_primes {
 	
 	/**
 	 * Rules out from the prime array all the multiplies of the given number.
-	 * @param numero the number for which to rule out the multiplies
+	 * @param primeNumber the number for which to rule out the multiplies
 	 * @param isPrime the array of primes
 	 */
-	protected static void ruleOutMultiples(int numero, boolean[] isPrime) {
-		int upperLimit = isPrime.length;
+	protected static void ruleOutMultiplesOfPrime(int primeNumber, boolean[] isPrime) {
+		int maxPrime = isPrime.length -1;
 
-		if (numero > Math.sqrt(upperLimit)) {
+		if (primeNumber > Math.sqrt(maxPrime)) {
 			return;
 		}
 		
-		for (int i = (numero*numero); i < upperLimit; i+=(numero * 2)) {
+		for (int i = (primeNumber*primeNumber); i <= maxPrime; i+=(primeNumber * 2)) {
 			isPrime[i] = false;
 		}
 	}
 	
+	protected static boolean isPrimeSiege(int number) {
+		
+		if ( (number == 0) || (number == 1)) {
+			return false;
+		}
+		
+		if (isEven(number)) {
+			return (number == 2) ? true : false;
+		}
+
+		boolean[] isPrime = buildArrayOfPrimes(number);
+		
+		return isPrime[number];
+	}
+
 	/**
 	 * Checks if a number is Even or Odd
 	 * @param number the number to check

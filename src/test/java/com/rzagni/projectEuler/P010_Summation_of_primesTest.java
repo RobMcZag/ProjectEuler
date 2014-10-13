@@ -17,19 +17,42 @@ public class P010_Summation_of_primesTest {
 
 	@Test
 	public void testSumPrimesLowerThanXXX() {
-		assertEquals(0, P010_Summation_of_primes.sumPrimes(0L));
+		assertEquals(0, P010_Summation_of_primes.sumPrimes(0));
 
-		assertEquals(0, P010_Summation_of_primes.sumPrimes(1L));
+		assertEquals(0, P010_Summation_of_primes.sumPrimes(1));
 
-		assertEquals(2, P010_Summation_of_primes.sumPrimes(2L));
+		assertEquals(2, P010_Summation_of_primes.sumPrimes(2));
 
-		assertEquals(2+3, P010_Summation_of_primes.sumPrimes(3L));
+		assertEquals(2+3, P010_Summation_of_primes.sumPrimes(3));
 
-		assertEquals(2+3+5, P010_Summation_of_primes.sumPrimes(5L));
+		assertEquals(2+3+5, P010_Summation_of_primes.sumPrimes(5));
 
-		assertEquals(17, P010_Summation_of_primes.sumPrimes(10L));
+		assertEquals(17, P010_Summation_of_primes.sumPrimes(10));
 
-		assertEquals((17+11+13+17+19), P010_Summation_of_primes.sumPrimes(20L));
+		assertEquals((17+11+13+17+19), P010_Summation_of_primes.sumPrimes(20));
+		
+		//assertEquals(8720682138632L, P010_Summation_of_primes.sumPrimes(16769023));
+
+}
+
+	@Test
+	public void testSumPrimesSiege() {
+		assertEquals(0, P010_Summation_of_primes.sumPrimesSiege(0));
+
+		assertEquals(0, P010_Summation_of_primes.sumPrimesSiege(1));
+
+		assertEquals(2, P010_Summation_of_primes.sumPrimesSiege(2));
+
+		assertEquals(2+3, P010_Summation_of_primes.sumPrimesSiege(3));
+
+		assertEquals(2+3+5, P010_Summation_of_primes.sumPrimesSiege(5));
+
+		assertEquals(17, P010_Summation_of_primes.sumPrimesSiege(10));
+
+		assertEquals((17+11+13+17+19), P010_Summation_of_primes.sumPrimesSiege(20));
+		
+		//assertEquals(8720682138632L, P010_Summation_of_primes.sumPrimesSiege(16769023));
+		
 }
 
 	@Test
@@ -193,23 +216,44 @@ public class P010_Summation_of_primesTest {
 	}
 
 	@Test
-	public void testRuleOutMultiples() {
+	public void testRuleOutEvenOverTwo() {
 		boolean[] array = new boolean[100];
 		Arrays.fill(array, true);
 
-		P010_Summation_of_primes.ruleOutEven(array);		
+		P010_Summation_of_primes.ruleOutEvenOverTwo(array);		
 		assertTrue(array[2]);
 		assertFalse(array[4]);
 		assertFalse(array[8]);
 		assertFalse(array[50]);
-
-		P010_Summation_of_primes.ruleOutMultiples(3, array);		
-		assertTrue(array[3]);
-		assertFalse(array[6]);
-		assertFalse(array[9]);
-		assertFalse(array[93]);
+		assertFalse(array[98]);
 	}
 
+	@Test
+	public void testRuleOutMultiplesOfPrimThree() {
+		boolean[] array = new boolean[100];
+		Arrays.fill(array, true);
+
+		P010_Summation_of_primes.ruleOutMultiplesOfPrime(3, array);		
+		assertTrue(array[3]);
+		assertTrue(array[6]);	// We just rule out odd multiples of the prime
+		assertFalse(array[9]);	
+		assertFalse(array[93]);	// 3 * 31
+		assertTrue(array[96]);	// We just rule out odd multiples of the prime
+	}
+
+	@Test
+	public void testRuleOutMultiplesOfPrimeEleven() {
+		boolean[] array = new boolean[1000];
+		Arrays.fill(array, true);
+
+		P010_Summation_of_primes.ruleOutMultiplesOfPrime(11, array);		
+		assertTrue(array[11]);
+		assertTrue(array[22]);			// 11 *  2 We just rule out odd multiples of the prime
+		assertTrue(array[33]);			// 11 *  3 Should be ruled out when ruling out 3
+		assertFalse(array[121]);		// 11 * 11 The first number to be ruled out
+		assertTrue(array[121+11]);		// 11 * 12 We just rule out odd multiples of the prime
+		assertFalse(array[121+11+11]);	// 11 * 13 
+	}
 
 	@Test
 	public void testBuildArrayOfPrimes() {
@@ -228,65 +272,65 @@ public class P010_Summation_of_primesTest {
 
 	@Test
 	public void testIsPrimeSiege() {
-		boolean[] isPrime = P010_Summation_of_primes.buildArrayOfPrimes(2000000);	// 1073676287 is too much, no heap
+		//boolean[] isPrime = P010_Summation_of_primes.buildArrayOfPrimes(2000000);	// 1073676287 is too much, no heap
 			
 		// Zero is not prime
-		assertFalse(P010_Summation_of_primes.isPrimeSiege(0, isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege(0));
 		
 		// One is not prime
-		assertFalse(P010_Summation_of_primes.isPrimeSiege(1, isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege(1));
 		
 		// Two is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(2, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(2));
 		
 		// Tre is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(3, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(3));
 		
 		// Four is not prime
-		assertFalse(isPrime[4]);
-		assertFalse(P010_Summation_of_primes.isPrimeSiege(4, isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege(4));
 		
 		// Five is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(5, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(5));
 		
 		// Six is not prime
-		assertFalse(P010_Summation_of_primes.isPrimeSiege(6, isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege(6));
 		
 		// Seven is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(7, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(7));
 		
 		// Eleven is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(11, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(11));
 		
 		// 23 is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(23, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(23));
 		
 		// 7*11 is not prime
-		assertFalse(P010_Summation_of_primes.isPrimeSiege(7*11, isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege(7*11));
 		
 		// 3559 is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(3559, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(3559));
 		
 		// 3571 is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(3571, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(3571));
 		
 		// 16769023 is prime
-		//assertTrue(P010_Summation_of_primes.isPrimeSiege(16769023, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(16769023));
 		
 		// 1073676287 is prime
-		//assertTrue(P010_Summation_of_primes.isPrimeSiege(1073676287, isPrime));
+		//assertTrue(P010_Summation_of_primes.isPrimeSiege(1073676287)); // NO HEAP SPACE 1.073.676.287
 		
 		// 3559 +1 is NOT prime
-		assertFalse(P010_Summation_of_primes.isPrimeSiege(3559 +1 , isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege(3559 +1 ));
 
 		// 3559 -1 is NOT prime
-		assertFalse(P010_Summation_of_primes.isPrimeSiege(3559 -1 , isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege(3559 -1 ));
 
 		// (3559*3559) +1 is NOT prime
-		//assertFalse(P010_Summation_of_primes.isPrimeSiege( (3559*3559) +1, isPrime));
+		assertFalse(P010_Summation_of_primes.isPrimeSiege( (3559*3559) +1));
 		
 		// 349 is prime
-		assertTrue(P010_Summation_of_primes.isPrimeSiege(349, isPrime));
+		assertTrue(P010_Summation_of_primes.isPrimeSiege(349));
 				
 	}
+
 }
