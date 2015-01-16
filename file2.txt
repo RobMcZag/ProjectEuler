@@ -1,0 +1,205 @@
+Ibisense Industrial Internet stack
+
+Ibisense industrial internet cloud contains the essential components
+for creating analytics-based industrial internet applications. Our target is
+to turn industrial Big Data to actions that improve the efficiency,
+reduce maintenance cost and increase total availability.
+
+Data integration
+
+Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä 
+
+Ibisense has integrated varying data sources to cloud services. The sourcesÖöliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä Ööliä 
+
+Ibisense has integrated varying data sources to cloud services. The sources
+have ranged from battery operated embedded sensors to industrial plants.
+When working with industrial data, the security is always a concern. We
+have the methods to gather data without compromising the security of the
+operations.
+
+Big Data storage
+
+Industrial internet data sources can generate huge amounts of complex data.
+We apply the industry standard Big Data storage tools, like Hadoop and Cassandra.
+In the field of data storage, our core expertise lies in efficiently storing
+vast amounts of Time Series Data. 
+
+Realtime analytics
+Turning Big Data to knowledge and more importantly actions is a crucial part
+of the Industrial Internet. Computers and statistical tools are excellent in
+finding features from Big Data. Some of these features and correlations are
+meaningful, but most are artificial one. It soon becomes a necessity to
+include human insight into the analytics process.
+
+Ibisense offers several levels of analytics integration tools. With these
+tools, it is possible to add automatically executed analytics tools
+to the cloud. The tools allow domain experts to create simple automatically
+run analyses without the need of programming experts. On the other end of
+the spectrum, Ibisense offers tools for the expert data analysts working with
+tools like Matlab, SPSS, Python, Hadoop etc.
+
+Apps development platform
+
+Yhdys-sana-virhe Yhdys-sana-virheYhdys-sana-virheYhdys-sana-virheYhdys-sana-virheYhdys-sana-virheYhdys-sana-virheYhdys-sana-virhe
+Yhdys-sana-virhe Yhdys-sana-virhe Yhdys-sana-virhe Yhdys-sana-virhe Yhdys-sana-virhe
+
+sana,toinen,kolmas,these,are.separate.words
+
+spaces   spaces    
+
+tab	 tab	   tab
+tabs	 	   tabs		tabs
+
+scandinavicöcharters
+
+Ibisense Apps platform allows for creating Apps that are based on the
+exact needs of the end users and are based on the Big Data and the
+analytics results. In the current Mobile world, task specific applications
+are what the end users expect to have. The Apps can deliver exactly the 
+information needed for the task and exactly when it is needed. This
+reduces the information overload of the users and lets them to
+concentrate on their work instead of using time to find the needle
+they need from the haystack.
+
+Ibisense Industrial Internet stack
+
+Ibisense industrial internet cloud contains the essential components
+for creating analytics-based industrial internet applications. Our target is
+to turn industrial Big Data to actions that improve the efficiency,
+reduce maintenance cost and increase total availability.
+
+Data integration
+
+Ibisense has integrated varying data sources to cloud services. The sources
+have ranged from battery operated embedded sensors to industrial plants.
+When working with industrial data, the security is always a concern. We
+have the methods to gather data without compromising the security of the
+operations.
+
+Big Data storage
+
+Industrial internet data sources can generate huge amounts of complex data.
+We apply the industry standard Big Data storage tools, like Hadoop and Cassandra.
+In the field of data storage, our core expertise lies in efficiently storing
+vast amounts of Time Series Data. 
+
+Realtime analytics
+Turning Big Data to knowledge and more importantly actions is a crucial part
+of the Industrial Internet. Computers and statistical tools are excellent in
+finding features from Big Data. Some of these features and correlations are
+meaningful, but most are artificial one. It soon becomes a necessity to
+include human insight into the analytics process.
+
+Ibisense offers several levels of analytics integration tools. With these
+tools, it is possible to add automatically executed analytics tools
+to the cloud. The tools allow domain experts to create simple automatically
+run analyses without the need of programming experts. On the other end of
+the spectrum, Ibisense offers tools for the expert data analysts working with
+tools like Matlab, SPSS, Python, Hadoop etc.
+
+Apps development platform
+
+Ibisense Apps platform allows for creating Apps that are based on the
+exact needs of the end users and are based on the Big Data and the
+analytics results. In the current Mobile world, task specific applications
+are what the end users expect to have. The Apps can deliver exactly the 
+information needed for the task and exactly when it is needed. This
+reduces the information overload of the users and lets them to
+concentrate on their work instead of using time to find the needle
+they need from the haystack.
+
+Ibisense Industrial Internet stack
+
+Ibisense industrial internet cloud contains the essential components
+for creating analytics-based industrial internet applications. Our target is
+to turn industrial Big Data to actions that improve the efficiency,
+reduce maintenance cost and increase total availability.
+
+Data integration
+
+Ibisense has integrated varying data sources to cloud services. The sources
+have ranged from battery operated embedded sensors to industrial plants.
+When working with industrial data, the security is always a concern. We
+have the methods to gather data without compromising the security of the
+operations.
+
+Big Data storage
+
+Industrial internet data sources can generate huge amounts of complex data.
+We apply the industry standard Big Data storage tools, like Hadoop and Cassandra.
+In the field of data storage, our core expertise lies in efficiently storing
+vast amounts of Time Series Data. 
+
+Realtime analytics
+Turning Big Data to knowledge and more importantly actions is a crucial part
+of the Industrial Internet. Computers and statistical tools are excellent in
+finding features from Big Data. Some of these features and correlations are
+meaningful, but most are artificial one. It soon becomes a necessity to
+include human insight into the analytics process.
+
+Ibisense offers several levels of analytics integration tools. With these
+tools, it is possible to add automatically executed analytics tools
+to the cloud. The tools allow domain experts to create simple automatically
+run analyses without the need of programming experts. On the other end of
+the spectrum, Ibisense offers tools for the expert data analysts working with
+tools like Matlab, SPSS, Python, Hadoop etc.
+
+Apps development platform
+
+Ibisense Apps platform allows for creating Apps that are based on the
+exact needs of the end users and are based on the Big Data and the
+analytics results. In the current Mobile world, task specific applications
+are what the end users expect to have. The Apps can deliver exactly the 
+information needed for the task and exactly when it is needed. This
+reduces the information overload of the users and lets them to
+concentrate on their work instead of using time to find the needle
+they need from the haystack.
+
+Ibisense Industrial Internet stack
+
+Ibisense industrial internet cloud contains the essential components
+for creating analytics-based industrial internet applications. Our target is
+to turn industrial Big Data to actions that improve the efficiency,
+reduce maintenance cost and increase total availability.
+
+Data integration
+
+Ibisense has integrated varying data sources to cloud services. The sources
+have ranged from battery operated embedded sensors to industrial plants.
+When working with industrial data, the security is always a concern. We
+have the methods to gather data without compromising the security of the
+operations.
+
+Big Data storage
+
+Industrial internet data sources can generate huge amounts of complex data.
+We apply the industry standard Big Data storage tools, like Hadoop and Cassandra.
+In the field of data storage, our core expertise lies in efficiently storing
+vast amounts of Time Series Data. 
+
+Realtime analytics
+Turning Big Data to knowledge and more importantly actions is a crucial part
+of the Industrial Internet. Computers and statistical tools are excellent in
+finding features from Big Data. Some of these features and correlations are
+meaningful, but most are artificial one. It soon becomes a necessity to
+include human insight into the analytics process.
+
+
+Ibisense offers several levels of analytics integration tools. With these
+tools, it is possible to add automatically executed analytics tools
+to the cloud. The tools allow domain experts to create simple automatically
+run analyses without the need of programming experts. On the other end of
+the spectrum, Ibisense offers tools for the expert data analysts working with
+tools like Matlab, SPSS, Python, Hadoop etc.
+
+Apps development platform
+
+Ibisense Apps platform allows for creating Apps that are based on the
+exact needs of the end users and are based on the Big Data and the
+analytics results. In the current Mobile world, task specific applications
+are what the end users expect to have. The Apps can deliver exactly the 
+information needed for the task and exactly when it is needed. This
+reduces the information overload of the users and lets them to
+concentrate on their work instead of using time to find the needle
+they need from the haystack.
+
