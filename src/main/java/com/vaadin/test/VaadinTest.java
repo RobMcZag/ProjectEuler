@@ -3,7 +3,6 @@ package com.vaadin.test;
 public class VaadinTest {
 
 	public VaadinTest() {
-		// TODO Auto-generated constructor stub
 	}
 
     /**
